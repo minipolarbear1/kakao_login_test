@@ -59,17 +59,14 @@ class _LoginState extends State {
       ),
       body: Center(
           child: Column(
-            children: [
-              RaisedButton(child: Text("Login"), onPressed: _loginWithKakao),
-              RaisedButton(
-                  child: Text("Login with Talk"),
-                  onPressed: _isKakaoTalkInstalled ? _loginWithTalk : null),
-            ],
-          )),
-      )
-    );
-
-
+        children: [
+          RaisedButton(child: Text("Login"), onPressed: _loginWithKakao),
+          RaisedButton(
+              child: Text("Login with Talk"),
+              onPressed: _isKakaoTalkInstalled ? _loginWithTalk : null),
+        ],
+      )),
+    ));
   }
 
   _loginWithKakao() async {
